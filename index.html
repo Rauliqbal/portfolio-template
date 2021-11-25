@@ -11,33 +11,36 @@
         <!-- Style Css -->
         <link rel="stylesheet" href="css/style.css" />
 
+        <!-- Fontawesome  -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
         <title>Lukman Khafi - Site</title>
     </head>
     <body>
         <!-- START:Navbar -->
-        <nav class="nav navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <nav class="nav navbar fixed-top navbar-expand-lg p-md-3">
             <div class="container">
-                <a href="" class="navbar-brand">web Lukman</a>
-                <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+                <a href="#top" class="navbar-brand text-light">web Lukman</a>
+                <button type="button" class="navbar-toggler navbar-dark" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse mt-1" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link text-white" href="">home</a>
+                            <a class="nav-link" href="#">home</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link text-white" href="">about</a>
+                            <a class="nav-link" href="#about">about</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link text-white" href="">portfolio</a>
+                            <a class="nav-link" href="">portfolio</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link text-white" href="">services</a>
+                            <a class="nav-link" href="">services</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link text-white" href="">blogs</a>
+                            <a class="nav-link" href="">blogs</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +49,7 @@
         <!-- END:Navbar -->
 
         <!-- START:Hero -->
-        <section class="hero banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="hero banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="content">
                     <h1 class="text-white text-center">
@@ -55,7 +58,7 @@
                     </h1>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- END:Hero -->
 
@@ -63,16 +66,24 @@
         <section id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <img class="img-fluid" src="image/about-img.jpg" alt="saya seorang front-end develeoper" />
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <h2>My Bio</h2>
+                    <div class="col-lg-6 col-12"><img class="img-fluid" src="image/about-img.jpg" alt="saya seorang front-end develeoper" /></div>
+                    <div class="content col-lg-6 col-12 align-self-center mt-4 mt-lg-0">
+                        <span>About Me</span>
+                        <h2>Front-end Developer</h2>
                         <p>
                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
                             ocean.
                         </p>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+                        <div class="hobby-title">
+                            <h3>My Hobby</h3>
+                            <div class="hobby">
+                                <li><i class="fas fa-gamepad px-2"></i>Game</li>
+                                <li><i class="fas fa-headphones-alt px-2"></i>Music</li>
+                                <li><i class="fas fa-suitcase-rolling px-2"></i>Travel</li>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
