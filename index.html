@@ -19,11 +19,11 @@
 
         <title>Lukman Khafi - Site</title>
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
         <!-- START:Navbar -->
         <nav class="nav navbar fixed-top navbar-expand-lg p-md-3">
             <div class="container">
-                <a href="#top" class="navbar-brand text-light">web Lukman</a>
+                <a href="#home" class="navbar-brand text-light">web Lukman</a>
                 <button type="button" class="navbar-toggler navbar-dark" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse mt-1" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mx-auto">
-                            <a class="nav-link" href="#">home</a>
+                            <a class="nav-link" href="#home">home</a>
                         </li>
                         <li class="nav-item mx-auto">
                             <a class="nav-link" href="#about">about</a>
@@ -43,7 +43,7 @@
                             <a class="nav-link" href="#service">services</a>
                         </li>
                         <li class="nav-item mx-auto">
-                            <a class="nav-link" href="#">blogs</a>
+                            <a class="nav-link disabled" href="#">blogs</a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +52,8 @@
         <!-- END:Navbar -->
 
         <!-- START:Hero -->
-        <div class="hero banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+
+        <div id="home" class="hero banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="content">
                     <h1 class="text-white text-center">
@@ -67,7 +68,7 @@
 
         <!-- START:About -->
         <section id="about">
-            <div class="container">
+            <div class="container px-sm-0 px-lg-5 py-4">
                 <div class="row">
                     <div class="col-lg-6 col-12"><img class="w-100" src="image/about-img.jpg" alt="saya seorang front-end develeoper" /></div>
                     <div class="content col-lg-6 col-12 mt-4 mt-lg-0 align-self-center">
@@ -171,6 +172,7 @@
         <!-- END:Service -->
 
         <!-- Javascript -->
+
         <script src="js/navbar.js"></script>
         <script src="js/filtering.js"></script>
 
