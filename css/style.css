@@ -73,6 +73,7 @@ section {
     font-weight: var(--font-weight-medium);
 }
 
+/****** Mobile Version ******/
 @media (max-width: 990px) {
     .navbar-nav {
         background-color: #212529 !important;
@@ -92,4 +93,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+}
+#about .content h2 {
+    font-size: 28px;
 }
