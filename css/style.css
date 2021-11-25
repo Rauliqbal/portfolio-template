@@ -6,10 +6,6 @@ body {
     font-family: "poppins", sans-serif;
 }
 
-section {
-    margin: 60px 0;
-}
-
 /* navbar */
 .navbar-nav {
     background-color: none;
