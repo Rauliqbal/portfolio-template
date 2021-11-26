@@ -173,48 +173,83 @@
 
         <!-- START:Contact -->
         <section id="contact">
-            <div class="container">  
-                <div class="form">
-                    <div class="wrap-contact100">
-                        <form class="contact100-form validate-form" id="whatsapp">
-                        <h2 class="form">Contact Me</h2>
-                        
-                        <input class="tujuan" type="hidden" id="noAdmin">
-                        <div class="form-group">
-                            <span class="label-input100">Name   :</span>
-                            <br>
-                            <label>
-                            <input class="nama" type="text" placeholder="enter your name">
-                            </label>
-                            <span class="focus-input100"></span>
-                        </div>
-                        <div class="form-group">
-                            <span class="label-input100">No Telp    :</span>
-                            <label>
-                            <input class="nowhatsapp" type="number" placeholder="021-000-000">
-                            </label>
-                            <span class="focus-input100"></span>
-                        </div>
-                        <div class="form-group">
-                            <span class="label-input100">Message    :</span>
-                            <label>
-                            <input type="text-area" class="pesan" placeholder="enter your messages"></input>
-                            </label>
-                            <span class="focus-input100"></span>
-                        </div>
-                        <div class="container-contact100-form-btn mt-2">
-                            <div class="wrap-contact100-form-btn">
-                            <div class="contact100-form-bgbtn"></div>
-                            <a class="btn btn-primary contact100-form-btn submit">Kirim</a>
+            <div class="container">
+                <h2 class="text-center">Contact Me</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-12 order-sm-last order-lg-0">
+                        <form id="whatsapp">
+                            <input class="tujuan" type="hidden" id="noAdmin" />
+                            <div class="form-group mb-3">
+                                <label class="form-label">Name :</label>
+                                <br />
+
+                                <input class="nama form-control" type="text" placeholder="enter your name" />
+
+                                <span class="focus-input100"></span>
                             </div>
-                        </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">No Telp :</label>
+                                <br />
+                                <input class="nowhatsapp form-control" type="number" placeholder="021-000-000" />
+                                <span class="focus-input100"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">Message :</label>
+                                <textarea class="pesan form-control" rows="3" placeholder="enter your messages"></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+                            <div class="container-contact100-form-btn mt-2">
+                                <div class="wrap-contact100-form-btn">
+                                    <div class="contact100-form-bgbtn"></div>
+                                    <a class="btn btn-primary contact100-form-btn submit">Kirim</a>
+                                </div>
+                            </div>
                         </form>
+                    </div>
+                    <div class="col-lg-6 col-12 content ps-4 mt-lg-4 mt-sm-0 order-sm-first order-lg-0">
+                        <div class="contact-title">
+                            <span>Contact Info</span>
+                        </div>
+                        <address class="d-flex">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span
+                                >Metland PEsona jepang jalan. wibu no 24 <br />
+                                kab.bekasi, Kec.cikarang
+                            </span>
+                        </address>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>089212314</span>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>example@gmail.com</span>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Blogs</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- END:COntact -->
+
+        <!-- START:Footer -->
+        <footer class="text-center">
+            <span>Code By Rauliqbal</span>
+        </footer>
+        <!-- END:Footer -->
+
         <!-- Javascript -->
         <script src="js/contact.js"></script>
         <script src="js/navbar.js"></script>
