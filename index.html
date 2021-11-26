@@ -14,6 +14,9 @@
         <!-- Fontawesome  -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+        <!-- AOS CDN -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
         <!-- Jquery -->
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
@@ -56,7 +59,7 @@
         <div id="home" class="hero banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="content">
-                    <h1 class="text-white text-center">
+                    <h1 class="text-white text-center" data-aos="zoom-in" data-aos-duration="1400">
                         I'm Lukman Khafi <br />
                         A Front-end Developer
                     </h1>
@@ -70,8 +73,10 @@
         <section id="about">
             <div class="container px-sm-0 px-lg-5 py-4">
                 <div class="row">
-                    <div class="col-lg-6 col-12"><img class="w-100" src="image/about-img.jpg" alt="saya seorang front-end develeoper" /></div>
-                    <div class="content col-lg-6 col-12 mt-4 mt-lg-0 align-self-center">
+                    <div class="col-lg-6 col-12 aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" data-aos-duration="800">
+                        <img class="w-100" src="image/about-img.jpg" alt="saya seorang front-end develeoper" />
+                    </div>
+                    <div class="content col-lg-6 col-12 mt-4 mt-lg-0 align-self-center aos-init aos-animate" data-aos="fade-left" data-aos-offset="400" data-aos-duration="800">
                         <span>About Me</span>
                         <h2>Front-end Developer</h2>
                         <p>
@@ -97,36 +102,36 @@
         <!-- START:Portfolio -->
         <section id="portfolio">
             <div class="container">
-                <h2 class="text-center">My Portfolio</h2>
+                <h2 class="text-center" data-aos="fade-up" data-aos-offset="100">My Portfolio</h2>
                 <div class="row">
-                    <div class="text-center mb-4">
+                    <div class="text-center mb-4" data-aos="fade-up" data-aos-offset="200">
                         <a class="btn filter-button" data-filter="all">All projects</a>
                         <a class="btn filter-button" data-filter="design">Design</a>
                         <a class="btn filter-button" data-filter="development">Development</a>
                     </div>
                     <br />
 
-                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design">
+                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design" data-aos="zoom-out" data-aos-offset="300">
                         <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development">
+                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development" data-aos="zoom-out" data-aos-offset="300">
                         <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design">
+                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design" data-aos="zoom-out" data-aos-offset="300">
                         <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development">
+                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development" data-aos="zoom-out" data-aos-offset="300">
                         <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development">
+                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development" data-aos="zoom-out" data-aos-offset="300">
                         <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design">
+                    <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design" data-aos="zoom-out" data-aos-offset="300">
                         <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
                     </div>
                 </div>
@@ -137,9 +142,9 @@
         <!-- START: SErvice -->
         <section id="service">
             <div class="container">
-                <h2 class="text-center">Services</h2>
+                <h2 class="text-center" data-aos="fade-up" data-aos-duration="400">Services</h2>
                 <div class="row mt-5">
-                    <div class="col-lg-4 col-md-6 mt-3 mt-lg-0">
+                    <div class="col-lg-4 col-md-6 mt-3 mt-lg-0" data-aos="flip-down" data-aos-offset="400">
                         <div class="card">
                             <img src="image/design-web.png" class="mx-auto mt-4" alt="..." />
                             <h3 class="text-center mt-2">Development</h3>
@@ -148,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-3 mt-lg-0">
+                    <div class="col-lg-4 col-md-6 mt-3 mt-lg-0" data-aos="flip-down" data-aos-offset="400">
                         <div class="card">
                             <img src="image/design-app.png" class="mx-auto mt-4" alt="..." />
                             <h3 class="text-center mt-2">Design App</h3>
@@ -157,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-3 mt-lg-0">
+                    <div class="col-lg-4 col-md-6 mt-3 mt-lg-0" data-aos="flip-down" data-aos-offset="400">
                         <div class="card">
                             <img src="image/web-development.png" class="mx-auto mt-4" alt="..." />
                             <h3 class="text-center mt-2">Maintenance</h3>
@@ -174,9 +179,9 @@
         <!-- START:Contact -->
         <section id="contact">
             <div class="container">
-                <h2 class="text-center">Contact Me</h2>
+                <h2 class="text-center" data-aos="fade-up" data-aos-offset="400">Contact Me</h2>
                 <div class="row">
-                    <div class="col-lg-6 col-12 order-sm-last order-lg-0">
+                    <div class="col-lg-6 col-12 order-last order-lg-0" data-aos="fade-up" data-aos-offset="400">
                         <form id="whatsapp">
                             <input class="tujuan" type="hidden" id="noAdmin" />
                             <div class="form-group mb-3">
@@ -206,7 +211,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-6 col-12 content ps-4 mt-lg-4 mt-sm-0 order-sm-first order-lg-0">
+                    <div class="col-lg-6 col-12 content ps-4 mt-lg-4 mt-sm-0 order-first order-lg-0" data-aos="fade-up" data-aos-offset="400">
                         <div class="contact-title">
                             <span>Contact Info</span>
                         </div>
@@ -251,6 +256,13 @@
         <!-- END:Footer -->
 
         <!-- Javascript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                durattion: 600,
+                easing: "ease",
+            });
+        </script>
         <script src="js/contact.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/filtering.js"></script>
