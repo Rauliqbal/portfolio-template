@@ -22,7 +22,7 @@ export default function NavBar() {
    const [navbar, setNavbar] = useState(false);
 
    return (
-      <nav className="w-full fixed bg-[#333333]/90 backdrop-blur-sm shadow z-50">
+      <nav className="w-full top-0 fixed bg-[#333333]/90 backdrop-blur-sm shadow z-50">
          <div className="justify-between container md:items-center md:flex md:px-8">
             <div>
                <div className="flex items-center justify-between py-3 md:py-8 md:block">
@@ -67,7 +67,7 @@ export default function NavBar() {
                </div>
             </div>
             <div className="hidden space-x-2 md:inline-block">
-               <NavLink href="/contact" className="btn-primary">
+               <NavLink href="https://instagram.com/raul.iqbl_" className="btn-primary">
                   Contact Me
                </NavLink>
             </div>

@@ -27,13 +27,13 @@ export default function Portfolio() {
 
          <div className="grid gap-8">
             {portfolios.map((portfolio) => (
-               <div key={portfolio.id} className="relative rounded-3xl overflow-hidden h-[300px] md:h-auto">
+               <NavLink href={portfolio.url} key={portfolio.id} className="relative rounded-3xl overflow-hidden h-[300px] md:h-auto">
                   <img className="w-full h-full object-cover" src={portfolio.image} alt={portfolio.title} />
                   <div className="absolute bg-gradient-to-t from-black inset-0 flex flex-col p-6 md:p-10 items-start justify-end opacity-0 hover:opacity-100 transition duration-500 ease-in-out">
                      <h3 className="text-white font-semibold text-2xl md:text-4xl">{portfolio.title}</h3>
                      <p className="text-white mt-4">{portfolio.desc}</p>
                   </div>
-               </div>
+               </NavLink>
             ))}
          </div>
          <div className="flex justify-center">
