@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html {
+      @apply bg-[#202020] scroll-smooth;
+   }
+   body {
+      @apply font-poppins;
+   }
+   section {
+      @apply py-28;
+   }
+   .container {
+      @apply !max-w-7xl;
+   }
+}
+
+@layer components {
+   .btn-primary {
+      @apply font-semibold px-6 py-3 bg-blue-500 text-white inline-flex rounded-lg justify-center hover:bg-blue-600 active:scale-95 transition duration-200 ease-out;
+   }
+   .btn-secondary {
+      @apply font-semibold px-7 py-3 bg-transparent ring-2 ring-white text-white justify-center hover:ring-gray-400 inline-flex rounded-lg active:scale-95 transition duration-200 ease-out;
+   }
+}
+
+@layer utilities {
+   .text-primary {
+      @apply text-blue-400;
+   }
+   .section-text {
+      @apply text-blue-400 text-4xl font-semibold text-center;
+   }
+}
