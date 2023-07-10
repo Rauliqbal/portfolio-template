@@ -26,9 +26,9 @@ export default function NavBar() {
          <div className="justify-between container md:items-center md:flex md:px-8">
             <div>
                <div className="flex items-center justify-between py-3 md:py-8 md:block">
-                  <a href="javascript:void(0)">
+                  <NavLink href="/">
                      <h2 className="text-2xl font-bold text-white font-josefin">{navBrand}</h2>
-                  </a>
+                  </NavLink>
                   <div className="md:hidden">
                      <button className="p-2 text-gray-700 rounded-md outline-none focus:ring-gray-400 focus:ring-2" onClick={() => setNavbar(!navbar)}>
                         {navbar ? (

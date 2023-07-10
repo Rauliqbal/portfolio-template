@@ -2,7 +2,7 @@ export default function About() {
    const name = "Rauliqbal";
 
    return (
-      <div className="container h-screen flex items-center justify-center">
+      <div className="container h-screen flex items-center justify-center mt-24 md:mt-0">
          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <img src="https://rauliqbal1.vercel.app/images/about-img.webp" alt="" />
             <div>
