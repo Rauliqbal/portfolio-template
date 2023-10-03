@@ -4,19 +4,19 @@ export default function Portfolio() {
    const portfolios = [
       {
          title: "Project 1",
-         image: "/src/assets/images/portfolio1.png",
+         image: "/images/portfolio1.png",
          desc: "Sed ut perspiciatis unde omnis iste natus error sitesy voluptatem accusantium doloremque lauda",
          url: "https://rauliqbal.my.id",
       },
       {
          title: "Project 2",
-         image: "/src/assets/images/portfolio2.png",
+         image: "/images/portfolio2.png",
          desc: "Sed ut perspiciatis unde omnis iste natus error sitesy voluptatem accusantium doloremque lauda",
          url: "https://rauliqbal.my.id",
       },
       {
          title: "Project 3",
-         image: "/src/assets/images/portfolio3.png",
+         image: "/images/portfolio3.png",
          desc: "Sed ut perspiciatis unde omnis iste natus error sitesy voluptatem accusantium doloremque lauda",
          url: "https://rauliqbal.my.id",
       },

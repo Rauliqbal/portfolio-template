@@ -2,17 +2,17 @@ export default function Skill() {
    const skills = [
       {
          title: "Web Developer",
-         image: "/src/assets/images/webdev.png",
+         image: "/images/webdev.png",
          desc: "Ut enim ad minima veniam exercitati ullam corporis suscipit laboriosam nisute",
       },
       {
          title: "Mobile Developer",
-         image: "/src/assets/images/appdev.png",
+         image: "/images/appdev.png",
          desc: "To take a trivial example which undertakes laborious physical exercise obtain",
       },
       {
          title: "UI Designer",
-         image: "/src/assets/images/uidesign.png",
+         image: "/images/uidesign.png",
          desc: "At vero eos accusaus dignisimos ducimuse qui blanditiis praesentium voluptatue",
       },
    ];

@@ -31,7 +31,7 @@ export default function Project() {
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
                <NavLink href={project.url} key={project.id} className="bg-[#333333] rounded-lg overflow-hidden hover:ring-2 hover:ring-blue-500 transition ease-in-out duration-300">
-                  <img className="h-[300px] object-cover" src={"/src/assets/images/" + project.image} alt="Cover ${project.title}" />
+                  <img className="h-[300px] object-cover" src={"/images/" + project.image} alt="Cover ${project.title}" />
                   <div className="p-6">
                      <h4 className="text-3xl font-semibold text-white">{project.title}</h4>
                   </div>
