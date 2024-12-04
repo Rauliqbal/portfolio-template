@@ -22,10 +22,12 @@
    border: none;
    border-radius: 30px;
    padding: 8px 24px;
+   transition: all 0.3s ease-out;
+   font-weight: var(--font-weight-semibold);
 }
 .btn-primary:hover {
    color: white;
-   background-color: var(--primary-dark);
+   background-color: var(--green);
    border: none;
 }
 
@@ -55,6 +57,17 @@ body {
 section {
    padding: 64px 0;
    overflow: hidden;
+}
+
+.desc {
+   font-size: 16px;
+   color: var(--secondary);
+}
+
+.section-title {
+   font-size: 28px;
+   color: var(--black);
+   font-weight: var(--font-weight-semibold);
 }
 
 /* navbar */
@@ -108,7 +121,7 @@ nav {
    color: #fff;
 }
 .desc {
-   font-size: 16px;
+   color: #fff;
 }
 
 a.socmed {
@@ -137,38 +150,14 @@ a.socmed {
 #about img {
    border-radius: 0 32px 0 32px;
 }
-#about .content span {
-   font-size: 18px;
-   letter-spacing: 6px;
-   text-transform: uppercase;
-   color: var(--primary);
+#about .heading {
+   color: var(--primary) !important;
 }
-#about .content h2 {
-   color: var(--black);
-   font-size: 38px;
-   font-weight: var(--font-weight-semibold);
-}
-#about .content p {
+
+#about .desc {
    color: var(--secondary);
    line-height: 28px;
    margin-top: 16px;
-}
-#about .hobby-title h3 {
-   font-size: 24px;
-   font-weight: var(--font-weight-medium);
-}
-#about .hobby li {
-   list-style: none;
-   font-size: 18px;
-}
-#about .hobby li i {
-   color: var(--primary);
-}
-
-#about .hobby {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 16px;
 }
 
 /* Portfolio */
@@ -256,8 +245,8 @@ footer span {
       background-color: transparent !important;
    }
 
-   #about .content h2 {
-      font-size: 28px;
+   #about .section-title {
+      font-size: 34px;
    }
 
    .heading {
