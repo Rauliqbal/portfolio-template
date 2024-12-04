@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap");
 
 /* Variable */
 :root {
@@ -8,10 +8,10 @@
    --black: #26312b;
    --background: #f1f1f1;
    --green: #3b661d;
-
-   /* Dark */
-
-   /* Variable Ketebalan Font */
+   /* Font Family */
+   --font-poppins: "poppins", sans-serif;
+   --font-teko: "Teko", sans-serif;
+   /* Variable Font */
    --font-weight-medium: 500;
    --font-weight-semibold: 600;
 }
@@ -44,10 +44,11 @@ input[type="number"] {
 html {
    scroll-behavior: smooth;
 }
+* {
+   text-decoration: none !important;
+}
 body {
-   margin: 0;
-   padding: 0;
-   font-family: "poppins", sans-serif;
+   font-family: var(--font-poppins);
    position: relative;
    background-color: var(--background);
 }
@@ -65,7 +66,7 @@ nav {
    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.383);
 }
 .navbar-nav {
-   background-color: none;
+   background-color: #212529 !important;
    border-radius: 16px;
 }
 
@@ -93,7 +94,43 @@ nav {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   box-shadow: inset 0 0 0 2000px rgba(20, 20, 20, 0.493);
+   box-shadow: inset 0 0 0 2000px rgba(20, 20, 20, 0.664);
+}
+.heading {
+   font-family: var(--font-teko);
+   font-size: 24px;
+   margin-bottom: 0;
+   line-height: 1em;
+}
+.title {
+   font-size: 34px;
+   font-weight: var(--font-weight-semibold);
+   color: #fff;
+}
+.desc {
+   font-size: 16px;
+}
+
+a.socmed {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   transition: all 0.3s ease-out;
+}
+.socmed:hover {
+   background-color: #fff;
+}
+
+.socmed .icon {
+   font-size: 24px;
+   color: #fff;
+   transition: all 0.3s ease-out;
+}
+.socmed:hover .icon {
+   color: #000;
 }
 
 /* About*/
@@ -214,12 +251,20 @@ footer span {
    font-weight: var(--font-weight-semibold);
 }
 /****** Mobile Version ******/
-@media (max-width: 990px) {
+@media (min-width: 990px) {
    .navbar-nav {
-      background-color: #212529 !important;
+      background-color: transparent !important;
    }
 
    #about .content h2 {
       font-size: 28px;
+   }
+
+   .heading {
+      font-size: 32px;
+   }
+
+   .title {
+      font-size: 64px;
    }
 }
