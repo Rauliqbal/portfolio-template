@@ -1,5 +1,40 @@
-//no wa
-$("#noAdmin").val("089643706996");
+// Function Navbar 
+var nav = document.querySelector("nav");
+
+window.addEventListener("scroll", function () {
+    var nav = this.document.querySelector('nav')
+    nav.classList.toggle('sticky', this.window.scrollY > 0)
+});
+
+// Function Filtering Project
+$(document).ready(function () {
+    $(".filter-button").click(function () {
+        var value = $(this).attr("data-filter");
+
+        if (value == "all") {
+            //$('.filter').removeClass('hidden');
+            $(".filter").show("1000");
+        } else {
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter")
+                .not("." + value)
+                .hide("3000");
+            $(".filter")
+                .filter("." + value)
+                .show("3000");
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+});
+
+
+//  Function Contact
+$("#noAdmin").val("089673102977");
 $(".whatsapp-btn").click(function () {
     $("#whatsapp").toggleClass("toggle");
 });
@@ -52,3 +87,4 @@ function WhatsApp() {
         return false;
     }
 }
+
