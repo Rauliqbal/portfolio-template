@@ -30,6 +30,15 @@
    background-color: var(--green);
    border: none;
 }
+.btn-primary:active {
+   background-color: var(--green) !important;
+   scale: 0.95;
+}
+
+.card {
+   border: none;
+   border-radius: 12px;
+}
 
 /* input type number*/
 input::-webkit-outer-spin-button,
@@ -174,7 +183,21 @@ a.socmed {
    color: var(--primary);
 }
 #portfolio .gallery_product {
-   margin-bottom: 24px;
+   border-radius: 8px;
+   overflow: hidden;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+#portfolio .wrapper {
+   display: grid;
+   gap: 16px;
+   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+#portfolio .gallery_product:hover img {
+   transition: all 0.3s;
+   transform: scale(1.1);
 }
 
 /* Service */
@@ -255,5 +278,9 @@ footer span {
 
    .title {
       font-size: 64px;
+   }
+
+   #portfolio .wrapper {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
    }
 }
