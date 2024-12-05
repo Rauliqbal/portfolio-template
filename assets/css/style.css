@@ -199,12 +199,6 @@ a.socmed {
 .filter-button:hover {
    color: var(--primary);
 }
-#portfolio .gallery_product {
-   border-radius: 8px;
-   overflow: hidden;
-   padding-left: 0;
-   padding-right: 0;
-}
 
 #portfolio .wrapper {
    display: grid;
@@ -212,8 +206,51 @@ a.socmed {
    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-#portfolio .gallery_product:hover img {
+.card-project {
+   border-radius: 12px;
+   overflow: hidden;
+   padding-left: 0;
+   padding-right: 0;
+   position: relative;
+   transition: all 0.3s ease-out;
+}
+
+.card-project:hover .overlay {
+   opacity: 100;
+}
+
+.card-project .overlay {
+   display: flex;
+   opacity: 0;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.575);
+   inset: 0;
+   align-items: center;
+   justify-content: center;
    transition: all 0.3s;
+}
+
+.card-project .overlay a {
+   color: var(--primary);
+   font-size: 24px;
+   width: 46px;
+   height: 46px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   border-radius: 8px;
+   transition: all 0.3s ease-out;
+}
+.card-project .overlay a:hover {
+   background: #000;
+}
+
+.card-project img {
+   transition: 0.3s;
+}
+
+.card-project:hover img {
    transform: scale(1.1);
 }
 
