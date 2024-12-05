@@ -158,6 +158,22 @@ a.socmed {
    color: #000;
 }
 
+/* Service */
+
+#service .card img {
+   width: 64px;
+}
+#service .card h3 {
+   font-size: 18px;
+   font-weight: var(--font-weight-medium);
+}
+#service .card-body {
+   padding: 24px 40px;
+}
+#service .card-body p {
+   color: var(--secondary);
+}
+
 /* About*/
 #about img {
    border-radius: 0 32px 0 32px;
@@ -174,16 +190,13 @@ a.socmed {
 }
 
 /* Portfolio */
-
-#portfolio h2 {
-   font-size: 38px;
-   letter-spacing: 4px;
-}
-#portfolio a {
+.filter-button {
+   border: none;
    color: var(--secondary);
+   font-weight: var(--font-weight-medium);
 }
 
-#portfolio a:hover {
+.filter-button:hover {
    color: var(--primary);
 }
 #portfolio .gallery_product {
@@ -202,22 +215,6 @@ a.socmed {
 #portfolio .gallery_product:hover img {
    transition: all 0.3s;
    transform: scale(1.1);
-}
-
-/* Service */
-
-#service .card img {
-   width: 64px;
-}
-#service .card h3 {
-   font-size: 18px;
-   font-weight: var(--font-weight-medium);
-}
-#service .card-body {
-   padding: 24px 40px;
-}
-#service .card-body p {
-   color: var(--secondary);
 }
 
 /* Contact */
