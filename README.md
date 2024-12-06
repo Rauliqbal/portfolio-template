@@ -8,6 +8,8 @@
 
 open `index.html` in your browser
 
+delete whatsapp number go to `assets/js/script.js`, then replace with your whatsapp number
+
 ## THANKS
 
 Don't forget to give feedback for a better experience. You can use it for commercial purposes in your projects.

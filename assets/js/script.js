@@ -34,7 +34,8 @@ $(document).ready(function () {
 
 
 //  Function Contact
-$("#noAdmin").val("089673102977");
+
+$("#noAdmin").val("08967310"); // No Whatsapp
 $(".whatsapp-btn").click(function () {
     $("#whatsapp").toggleClass("toggle");
 });
